@@ -108,6 +108,11 @@ Although the language is simple, the intentions are serious and this contract is
 
 ### The dotted line
 
-Signed by and on behalf of [company] _____________________
-Signed by and on behalf of [client]_____________________
+Signed by and on behalf of [company]
+
+_____________________
+
+Signed by and on behalf of [client]
+
+_____________________
 Date [date]
