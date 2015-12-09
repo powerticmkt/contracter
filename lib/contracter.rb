@@ -6,7 +6,7 @@ class Contracter
         c.instance_eval(&block)
 
         t = (c.instance_variable_get("@template_path") or "#{Gem.datadir('contracter')}/template.md")
-        self.fill_template(File.read(t), c)
+        self.fill_template(File.read(t, :encoding => "UTF-8"), c)
     end
 
 private
