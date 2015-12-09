@@ -1,34 +1,12 @@
 class Contract
-    def company c
-        @company = c
-    end
-
-    def client c
-        @client = c
-    end
-
-    def client_address a
-        @client_address = a
-    end
-
-    def service s
-        @service = s
-    end
-
-    def estimated_total t
-        @estimated_total = t
-    end
-
-    def payment_details d
-        @payment_details = d
-    end
-
-    def payment_schedule s
-        @payment_schedule = s
-    end
-
-    def date d
-        @date = d
+    def method_missing(name_sym, *args)
+        if args.length == 1
+            self.instance_variable_set "@#{name_sym.to_s}", *args
+        elsif args.length > 1
+            self.instance_variable_set "@#{name_sym.to_s}", args.join('\n')
+        else
+            raise ArgumentError, 'Value not passed to template.'
+        end
     end
 
     def template_path p
