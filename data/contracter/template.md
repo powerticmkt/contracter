@@ -9,7 +9,7 @@ I'll always do my best to fulfill your needs and meet your expectations, but it�
 
 So in short;
 
-You ([client]), located at [client_address] are hiring me ([company]) located at [company_address] to [service] for the estimated total price of[estimated_total] as outlined in my previous correspondence. Of course it’s a little more complicated, but I'll get to that.
+You ([client]), located at [client_address] are hiring me ([company]) located at [company_address] to [service] for the estimated total price of [estimated_total] as outlined in my previous correspondence. Of course it’s a little more complicated, but I'll get to that.
 
 ## What do both parties agree to do?
 
