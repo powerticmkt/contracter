@@ -9,8 +9,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Remi Gelinas"]
   spec.email         = ["remigelinas1@gmail.com"]
 
-  spec.summary       = %q{A web development contract generator.}
-  spec.description   = %q{A Ruby gem that provides a simple DSL for generating web development contracts.}
+  spec.summary       = %q{A quality of life gem for contract generation.}
+  spec.description   = %q{A quality of life gem that provides a simple DSL for generating contracts.}
   spec.homepage      = "https://github.com/remi-gelinas/contracter"
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }

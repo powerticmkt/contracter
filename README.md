@@ -1,6 +1,6 @@
 # Contracter
 
-Contracter is a quality of life gem that provides a simple Domain Specific Language for web designers and developers to use in generating their client contracts. Contracts are generated in a Markdown format and are based on the popular open-source contract available [here](https://stuffandnonsense.co.uk/projects/contract-killer/).
+Contracter is a quality of life gem that provides a simple Domain Specific Language for anyone to use in generating contracts for clients and services. Contracts are generated in a Markdown format. The default template is my personal contract template based on the popular open-source contract available [here](https://stuffandnonsense.co.uk/projects/contract-killer/).
 
 ## Installation
 
