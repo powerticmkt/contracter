@@ -5,7 +5,7 @@ class Contracter
         c = Contract.new
         c.instance_eval(&block)
 
-        t = (c.instance_variable_get("@template_path") or "#{Gem.datadir}/template.md")
+        t = (c.instance_variable_get("@template_path") or "#{Gem.datadir('contracter')}/template.md")
         self.fill_template(File.read(t), c)
     end
 
