@@ -43,16 +43,19 @@ Browser testing no longer means attempting to make a website look the same in br
 
 ### Desktop browser testing
 
-I test my work in current versions of major desktop browsers including those made by Apple (Safari), Google (Chrome), Microsoft (Edge), Mozilla Firefox and Opera. I'll also test to ensure that people who use Microsoft Internet Explorer 11 for Windows get an appropriate experience. I won’t test in other older browsers unless I agreed separately. If you need an enhanced design for an older browser, I can provide a separate estimate for that.
+I test my work in current versions of major desktop browsers including:
+
+[desktop_browsers]
+
+I won’t test in other older browsers unless I agreed separately. If you need an enhanced design for an older browser, I can provide a separate estimate for that.
 
 ### Mobile browser testing
 
 Testing using popular smaller screen devices is essential in ensuring that a person’s experience of a design is appropriate to the capabilities of the device they’re using. I test my designs in:
 
-Google Chrome
-Android: Google Chrome on Android Emulator
+[mobile_browsers]
 
-I won’t test in Blackberry, Opera Mini/Mobile, specific Android devices, Windows or other mobile browsers unless agreed separately.
+I won’t test in other mobile browsers unless agreed upon separately.
 
 ### Technical support
 
@@ -65,8 +68,7 @@ I don’t guarantee improvements to your website's search engine ranking, but th
 
 ### Changes and revisions
 
-I know from experience that fixed-price contracts are rarely beneficial to you, as they often limit you to your earliest ideas. I don’t want to limit your ability to change your mind. The price at the beginning of this contract is based on the
-number of weeks that I estimate I'll need to accomplish everything you’ve told me you want to achieve, but I’m happy to be flexible. If you want to change your mind or add anything new, that won’t be a problem as I'll provide a separate estimate for those additional weeks.
+I know from experience that fixed-price contracts are rarely beneficial to you, as they often limit you to your earliest ideas. I don’t want to limit your ability to change your mind. The price at the beginning of this contract is based on the number of weeks that I estimate I'll need to accomplish everything you’ve told me you want to achieve, but I’m happy to be flexible. If you want to change your mind or add anything new, that won’t be a problem as I'll provide a separate estimate for those additional weeks.
 
 ### Legal stuff
 
@@ -74,7 +76,7 @@ I can’t guarantee that my work will be error-free and so I can’t be liable t
 
 ### Copyrights
 
-First, you guarantee that all elements of text, images or other artwork you provide are either owned by your good selves, or that you’ve permission to use them.
+First, you guarantee that all elements of text, images or other artwork you provide are either owned by you, or that you’ve permission to use them.
 
 Then, when your final payment has cleared, copyright will be automatically assigned as follows:
 
@@ -102,7 +104,7 @@ You agree to pay all charges associated with international transfers of funds. T
 
 Just like a parking ticket, you can’t transfer this contract to anyone else without my permission. This contract stays in place and need not be renewed. If for some reason one part of this contract becomes invalid or unenforceable, the remaining parts of it remain in place.
 
-Although the language is simple, the intentions are serious and this contract is a legal document under exclusive jurisdiction of [English and Welsh] courts.
+Although the language is simple, the intentions are serious and this contract is a legal document under exclusive jurisdiction of [court] courts.
 
 ### The dotted line
 
