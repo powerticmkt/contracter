@@ -1,8 +1,6 @@
 # Contracter
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/contracter`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+Contracter is a quality of life gem that provides a simple Domain Specific Language for web designers and developers to use in generating their client contracts. Contracts are generated in a Markdown format and are based on the popular open-source contract available [here](https://stuffandnonsense.co.uk/projects/contract-killer/).
 
 ## Installation
 
@@ -22,7 +20,28 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+First, require the gem:
+
+```ruby
+require 'contracter'
+```
+
+Then generate a contract by using the Contracter DSL syntax:
+
+```ruby
+contract = Contracter.build do
+    # Any property can be used here, and will get replaced with the given value in the template where the method name appears in the format [name].
+    company 'Test Company Please Ignore'
+
+    # Any property given multiple values will be replaced with the values on separate lines.
+    browsers 'Safari', 'Google Chrome'
+
+    # If you would like to use your own template, you may explicitly pass Contracter the path to it. The template can be in any plain text UTF-8 encoded format.
+    template_path 'path/to/your/template.txt'
+end
+```
+
+The contract will be built from the template and returned as a Markdown-formatted string.
 
 ## Development
 
@@ -32,5 +51,4 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/contracter.
-
+Bug reports and pull requests are welcome on GitHub at https://github.com/remi-gelinas/contracter.
