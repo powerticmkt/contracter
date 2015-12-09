@@ -110,9 +110,9 @@ Although the language is simple, the intentions are serious and this contract is
 
 Signed by and on behalf of [company]
 
-_____________________
+\_____________________
 
 Signed by and on behalf of [client]
 
-_____________________
+\_____________________
 Date [date]
