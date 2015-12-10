@@ -1,4 +1,4 @@
-![contracter](assets/Contracter.png)
+![contracter](assets/banner.png)
 
 Contracter is a quality of life gem that provides a simple Domain Specific Language for anyone to use in generating contracts for clients and services from templates. The default template is my personal contract template based on the popular open-source contract available [here](https://stuffandnonsense.co.uk/projects/contract-killer/).
 
