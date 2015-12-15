@@ -1,19 +1,12 @@
-require "contracter/contract"
+Dir["#{File.dirname(__FILE__)}/contracter/**/*.rb"].each { |e| require e unless e == 'version.rb' }
 
 class Contracter
-    def self.build &block
-        c = Contract.new
+    def self.build_from(path = "#{File.expand_path('..', File.dirname(__FILE__))}/data/contracter/template.md", &block)
+        c = Contract.new File.read(path, :encoding => "UTF-8")
+        c.load_params
         c.instance_eval(&block)
+        c.replace_params
 
-        t = (c.instance_variable_get("@template_path") or "#{Gem.datadir('contracter')}/template.md")
-        self.fill_template(File.read(t, :encoding => "UTF-8"), c)
-    end
-
-private
-    def self.fill_template t, c
-        c.instance_variables.map(&:to_s).each do |v|
-            t.gsub!(/\[#{Regexp.quote(v.gsub("@", ""))}\]/, c.instance_variable_get(v))
-        end
-        t.gsub(/\[\w+?\]/, "MISSING")
+        c.template
     end
 end
