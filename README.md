@@ -26,22 +26,22 @@ First, require the gem:
 require 'contracter'
 ```
 
-Then generate a contract by using the Contracter DSL syntax:
+Then generate a contract by using the Contracter syntax:
 
 ```ruby
-contract = Contracter.build do
-    # Any property can be used here, and will get replaced with the given value in the template where the method name appears in the format [name].
-    company 'Test Company Please Ignore'
+# This fills the default template
+contract = Contracter.build_from do
+    # Any property can be used here, and will get replaced with the given value in the template where the method name appears in the format [name]
+    test_value 'Test Value Please Ignore'
+end
 
-    # Any property given multiple values will be replaced with the values on separate lines.
-    browsers 'Safari', 'Google Chrome'
-
-    # If you would like to use your own template, you may explicitly pass Contracter the path to it. The template can be in any plain text UTF-8 encoded format.
-    template_path 'path/to/your/template.txt'
+# You can also fill a custom template, by passing Contracter the path
+contract = Contracter.build_from 'path/to/custom/template' do
+    test_value 'Test Value Please Ignore'
 end
 ```
 
-The contract will be built from the template and returned as a Markdown-formatted string.
+The contract will be built from the template and returned as a string.
 
 ## Development
 
