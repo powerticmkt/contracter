@@ -1,4 +1,4 @@
-#Dir["#{File.dirname(__FILE__)}/contracter/**/*.rb"].each { |e| require e unless e == 'version.rb' }
+Dir["#{File.dirname(__FILE__)}/contracter/**/*.rb"].each { |e| require e unless e == 'version.rb' }
 
 class Contracter
     def self.build_from(path = "#{File.expand_path('..', File.dirname(__FILE__))}/data/contracter/template.md", &block)
